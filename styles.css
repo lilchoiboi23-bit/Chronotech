@@ -868,7 +868,6 @@ main,
   height: 100%;
   border: 0;
   opacity: 0.9;
-  object-fit: cover;
   background: #040810;
 }
 
