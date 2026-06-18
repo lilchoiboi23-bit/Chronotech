@@ -1,0 +1,43 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Chronotech Industry Logo</title>
+  <desc id="desc">A futuristic circular time-drive emblem with a C-shaped core.</desc>
+  <defs>
+    <linearGradient id="bg" x1="96" y1="80" x2="416" y2="432" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10213A"/>
+      <stop offset="1" stop-color="#050B14"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="124" y1="128" x2="392" y2="384" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7FF4FF"/>
+      <stop offset="0.52" stop-color="#9FB7FF"/>
+      <stop offset="1" stop-color="#8D7BFF"/>
+    </linearGradient>
+    <linearGradient id="core" x1="192" y1="180" x2="320" y2="332" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFFFFF"/>
+      <stop offset="0.44" stop-color="#7FF4FF"/>
+      <stop offset="1" stop-color="#214B6A"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="24" y="24" width="464" height="464" rx="128" fill="url(#bg)"/>
+  <rect x="24" y="24" width="464" height="464" rx="128" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+
+  <circle cx="256" cy="256" r="154" stroke="url(#ring)" stroke-width="26" stroke-linecap="round"
+    stroke-dasharray="740 120" transform="rotate(-28 256 256)"/>
+  <circle cx="256" cy="256" r="110" stroke="rgba(127,244,255,0.18)" stroke-width="2" />
+  <circle cx="256" cy="256" r="72" stroke="rgba(255,255,255,0.10)" stroke-width="2" />
+
+  <path d="M314 188C300.5 172.5 281 164 258 164C214.4 164 180 198.4 180 242V270C180 313.6 214.4 348 258 348C281 348 300.5 339.5 314 324"
+        stroke="url(#core)" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M324 188C314.9 182.1 304.3 178 292 176" stroke="rgba(255,255,255,0.35)" stroke-width="10" stroke-linecap="round"/>
+
+  <path d="M362 150L378 134" stroke="#7FF4FF" stroke-width="10" stroke-linecap="round"/>
+  <path d="M152 364L134 382" stroke="#8D7BFF" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="378" cy="134" r="7" fill="#7FF4FF"/>
+  <circle cx="134" cy="382" r="7" fill="#8D7BFF"/>
+
+  <path d="M346 244H392" stroke="rgba(255,255,255,0.14)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M120 268H166" stroke="rgba(255,255,255,0.14)" stroke-width="8" stroke-linecap="round"/>
+
+  <circle cx="256" cy="256" r="18" fill="rgba(5,11,20,0.92)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  <path d="M249 256L256 263L265 246" stroke="#EFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
