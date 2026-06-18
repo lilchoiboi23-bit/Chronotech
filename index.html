@@ -20,39 +20,59 @@
     <div class="noise"></div>
     <div class="ambient ambient-a"></div>
     <div class="ambient ambient-b"></div>
+    <div class="space-field" aria-hidden="true"></div>
     <div class="interaction-layer" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+    <div class="warp-loader" aria-hidden="true">
+      <div class="warp-flash"></div>
+      <div class="warp-streaks"></div>
+      <div class="warp-shockwave"></div>
+      <div class="warp-core"></div>
+      <div class="warp-ring warp-ring-a"></div>
+      <div class="warp-ring warp-ring-b"></div>
+      <div class="warp-ring warp-ring-c"></div>
+      <div class="warp-debris warp-debris-a"></div>
+      <div class="warp-debris warp-debris-b"></div>
+      <div class="warp-debris warp-debris-c"></div>
+      <div class="warp-title">TIME JUMP INITIATED</div>
+    </div>
 
     <header class="site-header" id="top">
       <a class="brand" href="#top" aria-label="Back to Chronotech Industry home">
-        <img class="brand-mark" src="logo.svg" alt="" aria-hidden="true" />
-        <span class="brand-text">
+        <span class="brand-wordmark">
           <strong>CHRONOTECH INDUSTRY</strong>
           <small>TIME ENGINEERING DIVISION</small>
         </span>
       </a>
       <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="buy.html">Buy</a>
+        <a href="cart.html">Cart</a>
+        <a href="about.html">About Us</a>
         <a href="#vision">Vision</a>
         <a href="#technology">Technology</a>
         <a href="#team">Team</a>
         <a href="#platform">Platform</a>
-        <a href="#shopping">Shopping</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main class="center-stage" aria-label="Featured video">
-      <div class="timestamp-display" id="digitalTimestamp" aria-label="Current date and time">
+      <div class="timestamp-display reveal-on-load" id="digitalTimestamp" aria-label="Current date and time">
         ---- -- -- --:--:--
       </div>
 
-      <div class="video-card">
-        <iframe
+      <div class="video-card reveal-on-load">
+        <video
           class="video-embed"
-          src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&loop=1&playlist=dQw4w9WgXcQ&controls=1&rel=0&modestbranding=1"
-          title="Chronotech Industry promotional video"
-          allow="autoplay; encrypted-media; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+          src="time-travel.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+          aria-label="Time travel cinematic video"
+        ></video>
 
         <div class="video-card-copy">
           <span class="video-card-label">PROMOTIONAL FILM</span>
@@ -60,10 +80,25 @@
           <p>Chronotech Industry presents a cinematic launch piece for temporal travel technology.</p>
         </div>
       </div>
+
+      <div class="motion-band" aria-hidden="true">
+        <div class="motion-band-track">
+          <span>Temporal navigation</span>
+          <span>Quantum stabilization</span>
+          <span>Mission-ready systems</span>
+          <span>Time machine engineering</span>
+          <span>Chronotech Industry</span>
+          <span>Temporal navigation</span>
+          <span>Quantum stabilization</span>
+          <span>Mission-ready systems</span>
+          <span>Time machine engineering</span>
+          <span>Chronotech Industry</span>
+        </div>
+      </div>
     </main>
 
     <section class="info-grid" id="vision">
-      <article class="info-card">
+      <article class="info-card reveal-card">
         <p class="eyebrow">VISION</p>
         <h2>Build the safest temporal infrastructure in history.</h2>
         <p>We design time travel systems that are stable, precise, and built for responsible exploration across every timeline.</p>
@@ -73,7 +108,7 @@
           <li>Make temporal travel practical for research and enterprise use</li>
         </ul>
       </article>
-      <article class="info-card" id="technology">
+      <article class="info-card reveal-card" id="technology">
         <p class="eyebrow">TECHNOLOGY</p>
         <h2>Quantum stabilization, temporal anchoring, and route memory.</h2>
         <p>Our core stack keeps every jump locked, repeatable, and traceable from launch to return.</p>
@@ -83,7 +118,7 @@
           <span>Quantum Core</span>
         </div>
       </article>
-      <article class="info-card info-card-wide" id="team">
+      <article class="info-card info-card-wide reveal-card" id="team">
         <p class="eyebrow">TEAM</p>
         <h2>Led by engineers, physicists, and timeline architects.</h2>
         <p>Chronotech is built by a small elite group focused on research, reliability, and mission control.</p>
@@ -93,12 +128,12 @@
             <span>Co-Founder</span>
           </div>
           <div class="team-card">
-            <strong>Lucas</strong>
+            <strong>Lukas Fedorencikas</strong>
             <span>Co-Founder</span>
           </div>
         </div>
       </article>
-      <article class="info-card info-card-wide" id="platform">
+      <article class="info-card info-card-wide reveal-card" id="platform">
         <p class="eyebrow">PLATFORM</p>
         <h2>Enterprise systems for research, travel, and control.</h2>
         <p>Modular platforms support lab testing, long-range travel, and secure mission-grade operations.</p>
@@ -117,13 +152,13 @@
           </div>
         </div>
       </article>
-      <article class="info-card info-card-shop" id="shopping">
+      <article class="info-card info-card-shop reveal-card" id="shopping">
         <p class="eyebrow">SHOPPING</p>
         <h2>ChronoMachine</h2>
         <p>A premium time machine built for precise temporal travel, secure navigation, and elite exploration.</p>
         <div class="shop-layout">
           <div class="shop-visual">
-            <img src="chrono-machine.svg" alt="Illustration of a futuristic time machine traveling through a glowing portal">
+            <img src="delorean-time-machine.jpg" alt="DeLorean replica time machine">
           </div>
           <div class="shop-details">
             <div>
@@ -138,13 +173,13 @@
               <span>Mission-grade control</span>
             </div>
             <div class="shop-actions">
-              <a class="button button-primary" href="#contact">Request Purchase</a>
-              <a class="button button-secondary" href="#technology">View Specs</a>
+              <a class="button button-primary" href="buy.html">Request Purchase</a>
+              <a class="button button-secondary" href="cart.html">View Cart</a>
             </div>
           </div>
         </div>
       </article>
-      <article class="info-card info-card-contact" id="contact">
+      <article class="info-card info-card-contact reveal-card" id="contact">
         <p class="eyebrow">CONTACT</p>
         <h2>Ready to start a project?</h2>
         <div class="contact-block">
@@ -160,10 +195,22 @@
 
     <script>
       const digitalTimestamp = document.getElementById("digitalTimestamp");
+      const spaceField = document.querySelector(".space-field");
       const interactionLayer = document.querySelector(".interaction-layer");
+      const warpLoader = document.querySelector(".warp-loader");
+      const progressBar = document.querySelector(".scroll-progress span");
+      const revealTargets = document.querySelectorAll(".reveal-card, .reveal-on-load, .motion-band");
+      let lastScrollY = window.scrollY;
+      let targetPointerX = 0;
+      let targetPointerY = 0;
+      let currentPointerX = 0;
+      let currentPointerY = 0;
+      let ticking = false;
+      let glitchActive = false;
+      let glitchTicker = null;
+      let clockTicker = null;
 
-      function updateClock() {
-        const now = new Date();
+      function formatClock(now) {
         const date = new Intl.DateTimeFormat("en-CA", {
           year: "numeric",
           month: "2-digit",
@@ -177,11 +224,163 @@
           hour12: false,
         }).format(now);
 
-        digitalTimestamp.textContent = `${date} ${time}`;
+        return `${date} ${time}`;
+      }
+
+      function createGlitchText(baseText) {
+        const charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&*+-";
+        return baseText
+          .split("")
+          .map((character) => {
+            if (character === " " || character === "-" || character === ":") {
+              return Math.random() > 0.7 ? character : charset[Math.floor(Math.random() * charset.length)];
+            }
+
+            if (Math.random() < 0.22) {
+              return charset[Math.floor(Math.random() * charset.length)];
+            }
+
+            return character;
+          })
+          .join("");
+      }
+
+      function updateClock() {
+        const now = new Date();
+
+        if (glitchActive) {
+          const baseText = formatClock(now);
+          digitalTimestamp.textContent = createGlitchText(baseText);
+          return;
+        }
+
+        digitalTimestamp.textContent = formatClock(now);
       }
 
       updateClock();
-      setInterval(updateClock, 1000);
+      clockTicker = setInterval(updateClock, 1000);
+
+      function startClockGlitch(durationMs = 1500) {
+        glitchActive = true;
+        digitalTimestamp.classList.add("clock-glitch");
+
+        if (glitchTicker) {
+          clearInterval(glitchTicker);
+        }
+
+        glitchTicker = setInterval(() => {
+          updateClock();
+        }, 45);
+
+        window.setTimeout(() => {
+          glitchActive = false;
+          digitalTimestamp.classList.remove("clock-glitch");
+
+          if (glitchTicker) {
+            clearInterval(glitchTicker);
+            glitchTicker = null;
+          }
+
+          updateClock();
+        }, durationMs);
+      }
+
+      window.addEventListener("load", () => {
+        document.body.classList.add("warp-active");
+        startClockGlitch(1500);
+
+        const debrisCount = 26;
+        for (let i = 0; i < debrisCount; i += 1) {
+          const debris = document.createElement("div");
+          debris.className = "warp-spark";
+          const angle = Math.random() * Math.PI * 2;
+          const distance = 260 + Math.random() * 320;
+          const size = 1 + Math.random() * 3;
+          debris.style.left = "50%";
+          debris.style.top = "50%";
+          debris.style.setProperty("--dx", `${Math.cos(angle) * distance}px`);
+          debris.style.setProperty("--dy", `${Math.sin(angle) * distance}px`);
+          debris.style.setProperty("--size", `${size}px`);
+          debris.style.animationDelay = `${Math.random() * 0.14}s`;
+          warpLoader.appendChild(debris);
+        }
+
+        window.setTimeout(() => {
+          document.body.classList.remove("warp-active");
+          warpLoader.classList.add("warp-loader-exit");
+        }, 1550);
+
+        window.setTimeout(() => {
+          warpLoader.remove();
+        }, 2150);
+      });
+
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.18 }
+      );
+
+      revealTargets.forEach((target) => revealObserver.observe(target));
+
+      function updateProgress() {
+        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = maxScroll > 0 ? window.scrollY / maxScroll : 0;
+        progressBar.style.transform = `scaleX(${Math.min(Math.max(progress, 0), 1)})`;
+      }
+
+      updateProgress();
+      window.addEventListener("scroll", updateProgress, { passive: true });
+
+      function animateSpaceMotion() {
+        currentPointerX += (targetPointerX - currentPointerX) * 0.06;
+        currentPointerY += (targetPointerY - currentPointerY) * 0.06;
+
+        const scrollDelta = window.scrollY - lastScrollY;
+        lastScrollY = window.scrollY;
+        const travel = Math.min(window.scrollY / Math.max(document.body.scrollHeight - window.innerHeight, 1), 1);
+
+        document.documentElement.style.setProperty("--space-x", `${currentPointerX}`);
+        document.documentElement.style.setProperty("--space-y", `${currentPointerY}`);
+        document.documentElement.style.setProperty("--space-depth", `${1 + travel * 0.14}`);
+        document.documentElement.style.setProperty("--space-scroll", `${travel}`);
+        document.documentElement.style.setProperty("--space-tilt", `${currentPointerX * 0.015}deg`);
+
+        if (spaceField) {
+          spaceField.style.setProperty("--star-scroll", `${travel}`);
+          spaceField.style.setProperty("--star-drift", `${scrollDelta * 0.08}px`);
+        }
+
+        ticking = false;
+      }
+
+      function requestSpaceMotion() {
+        if (!ticking) {
+          ticking = true;
+          window.requestAnimationFrame(animateSpaceMotion);
+        }
+      }
+
+      window.addEventListener(
+        "pointermove",
+        (event) => {
+          targetPointerX = (event.clientX / window.innerWidth - 0.5) * 2;
+          targetPointerY = (event.clientY / window.innerHeight - 0.5) * 2;
+          document.documentElement.style.setProperty("--pointer-x", `${event.clientX}px`);
+          document.documentElement.style.setProperty("--pointer-y", `${event.clientY}px`);
+          requestSpaceMotion();
+        },
+        { passive: true }
+      );
+
+      window.addEventListener("scroll", requestSpaceMotion, { passive: true });
+      requestSpaceMotion();
 
       function spawnClickEffect(x, y) {
         const wave = document.createElement("div");
